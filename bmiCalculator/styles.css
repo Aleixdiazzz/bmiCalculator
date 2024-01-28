@@ -1,0 +1,131 @@
+/* Importing Fonts*/
+@font-face {
+    font-family: Cont-Extrabold;
+    src: url(./fonts/continuum/contb.ttf);
+}
+@font-face {
+    font-family: Cont-bold;
+    src: url(./fonts/continuum/contm.ttf);
+}
+@font-face {
+    font-family: Cont-light;
+    src: url(./fonts/continuum/contl.ttf);
+}
+
+
+html{
+    background-image: url(./images/backgorund.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+header{
+    font-family: Cont-light;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.contentHolder{
+    font-family: Cont-Bold;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin: auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-size: 20px;
+}
+
+.centralHolder{
+    font-family: Cont-Bold;
+    margin: auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.motto{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+.begin{
+    font-family: Cont-Extrabold;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(92, 160, 277);
+    width: 250px;
+    height: 70px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+#clear{
+    color: white;
+    background-color: rgb(92, 160, 277);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+#sendMeasurements{
+    color: white;
+    background-color: rgb(92, 160, 277);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+#seeHistory{
+    color: white;
+    background-color: rgb(92, 160, 277);
+    border-radius: 20px;
+    width: 90px;
+    text-align: center;
+    justify-content: center;
+}
+#clearHistory{
+    color: white;
+    background-color: rgb(92, 160, 277);
+    border-radius: 20px;
+    width: 90px;
+    text-align: center;
+    justify-content: center;
+}
+#measureAgain{
+    color: white;
+    background-color: rgb(92, 160, 277);
+    border-radius: 20px;
+    width: 90px;
+    text-align: center;
+    justify-content: center;
+}
+#labelForWeight{
+    color: white;
+}
+#labelForHeight{
+    color: white;
+}
+.chart{
+    width: 500px;
+}
+video{
+    width: 500px;
+}
+#historyHolder{
+    color: white;
+}

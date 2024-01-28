@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Description" content="Minesweeper Game">
+        <meta name="Author" content="Aleix Diaz">
+        <title>IMC</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <script src="./imc.js"></script>
+    </head>
+    <header>
+        <div class="topHeader"> <a href="./landing.html">IMC Calculator</a></div>
+    </header>
+    <body onload="writeResults()">
+        <div class="showingResult">
+            <h3>Your IMC is: <span id="result"></span></h3>
+            <img class="chart" src="./images/chart.jpeg">
+            <p class="infoAboutWeight">You seem to be on Obesity level 1</p>
+            <p class="infoAboutWeight">Here's some useful information:</p>
+            <br>
+            <video src="./videos/looseWeight.mp4" controls></video>
+            <p class="infoAboutWeight">Want to check your history?</p>
+            <button id="seeHistory" onclick="goToHistory()">History</button>
+            <p class="infoAboutWeight">Want to measure again?</p>
+            <button id="measureAgain" onclick="ready()">Measure Again</button>
+        </div>
+    </body>
+</html>

@@ -15,18 +15,19 @@ function imcCalc(){
     const height = document.getElementById("height").value;
     const weight = document.getElementById("weight").value;
     let imc = 0;
-    const currentDate = new Date();
+    const currentDate = new Date().toLocaleDateString();
+    const currentTime = new Date().toLocaleTimeString();
 
     // calculate imc
     imc = (weight / ((height / 100) * (height / 100)));
-    let roundedIMC = Math.round(imc * 10) / 10
+    let roundedIMC = Math.round(imc * 10) / 10;
 
     // save value on to localStorage
     localStorage.setItem('savedIMC' , roundedIMC);
 
     // save history
     const userInput = {
-        date: currentDate.toISOString(),
+        date: currentDate + " " + currentTime,
         weight: weight,
         height: height,
         imc: roundedIMC

@@ -1,5 +1,4 @@
 function ready(){
-    // takes user to data gathering page
     window.location = "imc.html"
 }
 function goToHistory() {

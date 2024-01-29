@@ -6,7 +6,7 @@ function goToHistory() {
 }
 
 function clearHistory(){
-    //does this really need a comment?
+    // does this really need a comment?
     localStorage.clear();
     location.reload();
 }
@@ -17,33 +17,33 @@ function imcCalc(){
     let imc = 0;
     const currentDate = new Date();
 
-    //calculate imc
+    // calculate imc
     imc = (weight / ((height / 100) * (height / 100)));
     let roundedIMC = Math.round(imc * 10) / 10
 
-    //save value on to localStorage
+    // save value on to localStorage
     localStorage.setItem('savedIMC' , roundedIMC);
 
-    //Save history
+    // save history
     const userInput = {
         date: currentDate.toISOString(),
         weight: weight,
         height: height,
         imc: roundedIMC
     }
-    //get older inputs
+    // get older inputs
     const existingInputs = JSON.parse(localStorage.getItem('userInputs')) || [];
 
-    //save updated array back to the storage
+    // save updated array back to the storage
     existingInputs.push(userInput);
     localStorage.setItem('userInputs', JSON.stringify(existingInputs));
 
-    //calling function to redirect to result page
+    // calling function to redirect to result page
     showResults(roundedIMC);
 }
 
 function showResults(roundedIMC) {
-    // Redirects user to result page
+    // redirects user to result page
 
     if (roundedIMC < 18.5){
         window.location = "underWeight.html"
